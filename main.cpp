@@ -1,5 +1,5 @@
 #include "mbed.h"
-
+//REVISION PENDIENTE 06/07/2024
 //defines
 
 AnalogIn VoltageSensor(A0); //Sensores de tension y corriente en entradas analogicas
