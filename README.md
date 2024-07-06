@@ -1,7 +1,7 @@
 ## TP1: Idea Proyecto
 ## Titulo del trabajo: Medidor Inteligente de Energia
 #### Alumno: 
-Lucas Veglia
+Lucas Veglia (email: lucasveglia7@gmail.com)
 
 #### Objetivo: 
 Desarrollar un sistema que permita monitorear el consumo de energía eléctrica residencial
