@@ -18,9 +18,7 @@ La placa utilizada como plataforma de desarrollo fue:
 
 - NUCLEO F429ZI
 
-En esta instancia del trabajo, los datos de tensión, corriente y potencia instantánea son enviados cada 1 milisegundo por el puerto serie, así como también un contador incremental de
-energía consumida, y un registro de la máxima potencia registrada. Sin embargo, los mismos se muestran en pantalla cada 1 segundo. Mediante un botón, 
-el usuario puede resetear el contador de energía y el registro de máxima potencia. Un led indicará que el sistema está en funcionamiento.
+En esta instancia del trabajo, los datos de tensión, corriente y potencia instantánea son enviados cada 1 milisegundo por el puerto serie, así como también un contador incremental de energía consumida, y un registro de la máxima potencia registrada. Sin embargo, los mismos se muestran en pantalla cada 1 segundo de forma independiente (evitando crear un código bloqueante) . Mediante un botón, el usuario puede resetear el contador de energía y el registro de máxima potencia. Un led indicará que el sistema está en funcionamiento.
 
 ![image](https://github.com/LukeV511/TP1/assets/130575845/94b8c5a4-beb4-4e01-a253-b734dfec2141)
 
@@ -35,6 +33,9 @@ Periféricos utilizados en esta instancia del trabajo TP1:
 
 Para alimentar los sensores, se utilizó una salida de 5V de la placa NUCLEO. Para acondicionar la señal saliente de los sensores y evitar que puedan
 dañar la placa (que está preparada para recibir como máximo 3,3V) se utilizaron 3 resistencias de 10 Kohm para crear un divisor resistivo para cada señal.
+
+Para que se puedan visualizar los valores en pantalla por comunicacion serial, se debió incluir el archivo mbed_app.json para que la combinación
+%2.f sea correctamente interpretada en el compilador.
 
 ![image](https://github.com/LukeV511/TP1/assets/130575845/14039133-e906-4d69-9f93-270143cb3eea)
 
